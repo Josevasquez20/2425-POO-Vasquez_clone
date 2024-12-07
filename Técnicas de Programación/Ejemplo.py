@@ -90,7 +90,7 @@ def combate(jugador_1, jugador_2):
     elif jugador_2.esta_vivo():
         print("\nHa ganado", jugador_2.nombre)
     else:
-        print("\nEmpate") #Empate
+        print("\nEmpate") #Empate uno
 
 
 personaje_1 = Guerrero("Guts", 20, 10, 4, 100, 4)
