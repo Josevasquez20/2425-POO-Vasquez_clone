@@ -26,5 +26,5 @@ class RegistroTemperaturas:  #Creamos una nueva clase
 
 
 registro = RegistroTemperaturas()  # Creamos una instanciade la clase
-registro.ingresar_temperaturas()  # Llamamos  al método para ingresar temperaturas
+registro.ingresar_temperaturas()  # Llamamos al metodo para ingresar las temepraturas
 registro.calcular_promedios()   #Llamamos al metodo para calcular el promedio
