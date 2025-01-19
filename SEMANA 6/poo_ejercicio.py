@@ -7,14 +7,14 @@ class Animal:
         return "El animal hace un sonido."
 
     def obtener_nombre(self):
-        return self.__nombre  # Creamos el método para acceder al atributo privado
+        return self.__nombre  # Creamos el metodo para acceder al atributo privado
 
 
 
 # Creamos nuestra clase hija que va a heredar de la clase padre animal
 class Perro(Animal):
     def hacer_sonido(self):  #Creamos el metodo hacer sonido
-        return "¡Guau!"  # Sobreescribimos el método de la clase padre
+        return "¡Guau!" #  #Sobreescribimos el metodo de la clase padre
 
 
 # Creamos otra clase llamada gato que de igual hereda de nuestra clase padre animal
