@@ -13,13 +13,13 @@ class Animal:
 
 # Creamos nuestra clase hija que va a heredar de la clase padre animal
 class Perro(Animal):
-    def hacer_sonido(self):  #Creamos el metodo hacer sonido
+    def hacer_sonido(self):  #Creamos el metodo hacer sonido el cual va hacer una accion diferente
         return "¡Guau!" #  #Sobreescribimos el metodo de la clase padre
 
 
 # Creamos otra clase llamada gato que de igual hereda de nuestra clase padre animal
 class Gato(Animal):
-    def hacer_sonido(self):
+    def hacer_sonido(self): #creamos el mismo metodo pero cn diferente accion
         return "¡Miau!"  # Volvemos a sobrrescribir el metodo
 
 
