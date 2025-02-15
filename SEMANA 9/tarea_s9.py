@@ -5,22 +5,22 @@ class Item:  # Creamos nuestra clase Item
         self.cantidad = cantidad
         self.precio = precio
 
-    def get_id(self):  # Método para obtener el ID
+    def get_id(self):  #Metodo para el id
         return self.id_item
 
-    def get_nombre(self):  # Método para obtener el nombre
+    def get_nombre(self):  # metodo para el nombre
         return self.nombre
 
-    def get_cantidad(self):  # Método para obtener la cantidad
+    def get_cantidad(self):  # metodo para obtener la cantidad
         return self.cantidad
 
-    def get_precio(self):  # Método para obtener el precio
+    def get_precio(self):  # metodo para obtener el precio
         return self.precio
 
-    def set_cantidad(self, cantidad):  # Método para establecer la cantidad
+    def set_cantidad(self, cantidad):  # metodo para establecer la cantidad
         self.cantidad = cantidad
 
-    def set_precio(self, precio):  # Método para establecer el precio
+    def set_precio(self, precio):  # metodo para establecer el precio 
         self.precio = precio
 
 
