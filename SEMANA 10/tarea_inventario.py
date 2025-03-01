@@ -161,19 +161,31 @@ def mostrar():
                 inventario.act_item(id_item, int(cantidad) if cantidad else None,
                                             float(precio) if precio else None)
 
-            elif opcion == '4':  # Buscar  producto
-                id_item = input("Ingrese ID del producto a actualizar: ")
-                cantidad = input("Ingrese nueva cantidad : ")
-                precio = input("Ingrese nuevo precio : ")
-                inventario.act_item(id_item, int(cantidad) if cantidad else None,
-                                            float(precio) if precio else None)
+
+            elif opcion == '4':  # Buscar producto
+
                 nombre = input("Ingrese nombre del item a buscar: ")
+
                 resultados = inventario.bus_item(nombre)
+
                 if resultados:  # Si hay resultados
+
+                    print("\nResultados de la búsqueda:")
+
+                    print("-" * 60)
+
+                    print(f"{'ID':<10} {'Nombre':<20} {'Cantidad':<10} {'Precio ($)':<10}")
+
+                    print("-" * 60)
+
                     for i in resultados:  # Iteramos sobre los resultados
-                        print(
-                            f"ID: {i.get_id()}, Nombre: {i.get_nombre()}, Cantidad: {i.get_cantidad()}, Precio: {i.get_precio()}")  # Mostramos los resultados
+
+                        print(f"{i.get_id():<10} {i.get_nombre():<20} {i.get_cantidad():<10} {i.get_precio():<10.2f}")
+
+                    print("-" * 60)
+
                 else:
+
                     print("No se encontraron productos.")  # Mensaje de no encontrado
 
             elif opcion == '5':  # Mostrar items
