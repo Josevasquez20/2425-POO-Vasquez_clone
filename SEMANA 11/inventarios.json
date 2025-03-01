@@ -1,0 +1,14 @@
+[
+    {
+        "id_item": "1",
+        "nombre": "atun",
+        "cantidad": 1,
+        "precio": 0.5
+    },
+    {
+        "id_item": "2",
+        "nombre": "cola",
+        "cantidad": 2,
+        "precio": 0.5
+    }
+]
