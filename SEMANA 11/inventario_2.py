@@ -9,22 +9,22 @@ class Item:  # Creamos nuestra clase Item
         self.cantidad = cantidad
         self.precio = precio
 
-    def get_id(self):  # Método para obtener el id
+    def get_id(self):
         return self.id_item
 
-    def get_nombre(self):  # Método para obtener el nombre
+    def get_nombre(self):
         return self.nombre
 
-    def get_cantidad(self):  # Método para obtener la cantidad
+    def get_cantidad(self):
         return self.cantidad
 
-    def get_precio(self):  # Método para obtener el precio
+    def get_precio(self):
         return self.precio
 
-    def set_cantidad(self, cantidad):  # Método para establecer la cantidad
+    def set_cantidad(self, cantidad):  # metodo para la cantidad
         self.cantidad = cantidad
 
-    def set_precio(self, precio):  # Método para establecer el precio
+    def set_precio(self, precio):  # metodo precio
         self.precio = precio
 
     def to_dict(self):
@@ -44,7 +44,7 @@ class Inventario:
         self.archivo = "inventarios.json"  # Nombre del archivo donde se almacenarán los datos
         self.cargar_archivo()  # Cargamos los datos del archivo al inicializar
 
-    # Creamos el método para guardar el archivo en formato JSON
+    # Creamos el metodo para el archivo json
     def guardar_archivo(self):
         try:
             # Convertimos todos los items a diccionarios
@@ -58,7 +58,7 @@ class Inventario:
         except Exception as e:
             print(f"Error al guardar en archivo: {str(e)}")
 
-    # Método para cargar el inventario desde el archivo JSON
+    # metodo json
     def cargar_archivo(self):
         try:
             with open(self.archivo, "r") as f:  # Abrimos el archivo en modo lectura
