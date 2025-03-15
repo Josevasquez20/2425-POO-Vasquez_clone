@@ -17,8 +17,7 @@ class AplicacionPrincipal:  # Defino mi clase principal que manejará toda la ap
 
         # Crear el marco principal
         self.marco_principal = ttk.Frame(root, padding="10")  # Creo un marco con padding para contener todos mis widgets
-        self.marco_principal.pack(fill=tk.BOTH, expand=True)  # Hago que mi marco principal ocupe todo el espacio disponible
-
+        self.marco_principal.pack(fill=tk.BOTH, expand=True)  
 
         self.crear_seccion_entrada()  # Llamo al metodo que creará la sección para ingresar datos
 
