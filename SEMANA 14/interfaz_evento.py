@@ -28,7 +28,7 @@ class CalendarioApp:
         # Creo un frame para los botones de acción
         self.frame_acciones = ttk.Frame(root, padding="10")
 
-        # Coloco el frame de eventos en la parte superior ocupando todo el ancho y expandiéndose
+        # Coloco el frame de eventos en la parte superior
         self.frame_eventos.pack(fill=tk.BOTH, expand=True)
         # Coloco el frame de entrada debajo con un poco de espacio alrededor
         self.frame_entrada.pack(fill=tk.X, padx=10, pady=5)
